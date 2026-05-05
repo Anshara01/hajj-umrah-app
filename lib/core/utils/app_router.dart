@@ -8,6 +8,9 @@ import '../../features/packages/home_screen.dart';
 import '../../features/packages/package_detail_screen.dart';
 import '../../features/packages/package_model.dart';
 import '../../features/booking/booking_screen.dart';
+import '../../features/profile/profile_screen.dart';
+import '../../features/admin/admin_dashboard_screen.dart';
+import '../../features/admin/add_package_screen.dart';
 
 final routerProvider = Provider<GoRouter>((ref) {
   final authState = ref.watch(authStateProvider);
@@ -42,10 +45,9 @@ final routerProvider = Provider<GoRouter>((ref) {
           return BookingScreen(package: pkg);
         },
       ),
-      GoRoute(
-        path: '/profile',
-        builder: (context, state) => const Scaffold(body: Center(child: Text('Profile Placeholder'))), // Placeholder for phase 5
-      )
+      GoRoute(path: '/profile', builder: (context, state) => const ProfileScreen()),
+      GoRoute(path: '/admin', builder: (context, state) => const AdminDashboardScreen()),
+      GoRoute(path: '/admin/add_package', builder: (context, state) => const AddPackageScreen()),
     ],
   );
 });
