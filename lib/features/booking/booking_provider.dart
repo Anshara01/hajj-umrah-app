@@ -5,7 +5,7 @@ import 'booking_model.dart';
 
 final userBookingsProvider = StreamProvider<List<BookingModel>>((ref) {
   final authState = ref.watch(authStateProvider);
-  final user = authState.valueOrNull;
+  final user = authState.value;
 
   if (user == null) {
     return Stream.value([]);

@@ -19,7 +19,7 @@ class _BookingScreenState extends ConsumerState<BookingScreen> {
   bool _isLoading = false;
 
   void _confirmBooking() async {
-    final user = ref.read(authStateProvider).valueOrNull;
+    final user = ref.read(authStateProvider).value;
     if (user == null) {
       ScaffoldMessenger.of(context).showSnackBar(const SnackBar(content: Text('User not signed in.')));
       return;
