@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "302732351020",
+    "project_id": "hajjumrahapp-ede59",
+    "storage_bucket": "hajjumrahapp-ede59.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302732351020:android:a342ce59c91a064ec76389",
+        "android_client_info": {
+          "package_name": "com.example.hajj_umrah_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBzNueQzwDOHT6xyj4fAbTAuXxiuV10lZU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
